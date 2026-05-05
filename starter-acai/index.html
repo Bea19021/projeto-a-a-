@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Açaí Tropical — Açaí cremoso direto da Amazônia. Site acessível com HTML semântico, CSS e JavaScript." />
+  <title>Açaí Tropical | Açaí cremoso direto da Amazônia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<img src="images/acai.jpeg" alt="banner">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Açaí Tropical - Página inicial">
+        <span class="logo-emoji" aria-hidden="true">💜🌴</span>
+        <span>Açaí Tropical</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container">
+        <h1 id="hero-titulo">Açaí Tropical</h1>
+        <p class="hero-tagline">Açaí cremoso direto da Amazônia</p>
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-titulo" class="section">
+      <div class="container">
+        <h2 id="sobre-titulo">Sobre nós</h2>
+        <p> Fundada em 2024, nós oferecemos açaí 100% natural, preservando o sabor autêntico e os benefícios da fruta. Pensando em todos os públicos, também contamos com opções especiais para diabéticos, garantindo uma experiência saudável e inclusiva sem abrir mão do prazer.
+.</p>
+      </div>
+    </section>
+
+    <section id="cardapio" aria-labelledby="cardapio-titulo" class="section section-alt">
+      <div class="container">
+        <h2 id="cardapio-titulo">Nosso cardápio</h2>
+        <p class="section-intro">Escolha seus favoritos. Use os botões para adicionar ao pedido.</p>
+        <div class="cards-grid" role="list">
+        <article class="card">
+          <img src="images/frutaacai.jpeg" alt="imgcard">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Açaí 300ml</h3>
+          <p>Açaí 100% natural, e os acompanhamentos clássicos (leite ninho, leite condensado, 3 frutas).</p>
+          <p class="price">R$ <span>16,99</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Açaí 300ml ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Açaí 500ml</h3>
+          <p>Açaí 100% natural, e os acompanhamentos clássicos (leite ninho, leite condensado, 3 frutas).</p>
+          <p class="price">R$ <span>25,00</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Açaí 500ml ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Açaí 750ml</h3>
+          <p>Açaí 100% natural, e os acompanhamentos clássicos (leite ninho, leite condensado, 3 frutas).</p>
+          <p class="price">R$ <span>35,00</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Açaí com Banana ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Açaí 900ml</h3>
+          <p>Açaí 100% natural, e os acompanhamentos clássicos (leite ninho, leite condensado, 3 frutas) .</p>
+          <p class="price">R$ <span>40,00</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Açaí light ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Açaí Família 1L </h3>
+          <p>Açaí 100% natural, os acompanhamentos clássicos (leite ninho, leite condensado, 3 frutas).</p>
+          <p class="price">R$ <span>40,00</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Açaí Família 1L ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Adicionais</h3>
+          <p>
+            Ovomaltine,
+            Ganache de chocolate ao leite e chocolate branco,
+          Nutella,
+             M&M,
+            .</p>
+          <p class="price">R$ <span>4,00</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Tigela Premium ao pedido">Adicionar</button>
+        </article>
+        <article class="card">
+          <div class="card-emoji" aria-hidden="true">🍇</div>
+          <h3>Acompanhamentos clássicos.</h3>
+          <p>Leite ninho,
+            Leite condensado
+            Frutas: Morango, Manga, Banana, Abacaxi, Kiwi, Uva,
+            Granola,
+             Paçoca,
+            Amendoim,
+          </p>
+          <p class="price">R$ <span>2,50</span></p>
+          <button type="button" class="btn-add" aria-label="Adicionar Acompanhamentos ao pedido">Adicionar</button>
+        </article>
+        </div>
+        <div class="pedido-box" role="status" aria-live="polite" aria-atomic="true">
+          <strong>Pedido:</strong> <span id="contador-pedido">0</span> item(ns)
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-titulo" class="section">
+      <div class="container">
+        <h2 id="contato-titulo">Fale conosco</h2>
+        <form class="form" novalidate>
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p class="form-feedback" role="alert" aria-live="assertive" id="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Açaí Tropical. Projeto educacional — Web Design Híbrido.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
